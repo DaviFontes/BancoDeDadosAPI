@@ -2,10 +2,12 @@
 
 Esta API foi criada para a disciplina **Banco de Dados I** e permite o cadastro e consulta de usuários.
 
+URL: http://34.235.170.120:8080
+
 ## Endpoints
 
 ### 1. **Documentação Interativa (Swagger UI)**
-- Caminho: `/docs`
+- Caminho: `http://34.235.170.120:8080/docs`
 - A documentação interativa permite testar os endpoints da API e visualizar detalhes das requisições e respostas.
 
 ### 2. **Consultar Usuários**
@@ -14,11 +16,11 @@ Esta API foi criada para a disciplina **Banco de Dados I** e permite o cadastro 
   - **Parâmetros**:
     - `cpf` (opcional): Número do CPF do usuário a ser consultado.
   - **Exemplo de uso**:
-    - Retornar todos os usuários: `GET /users`
-    - Retornar usuário com CPF específico: `GET /users?cpf=12345678901`
+    - Retornar todos os usuários: `http://34.235.170.120:8080/users`
+    - Retornar usuário com CPF específico: `http://34.235.170.120:8080/users?cpf=12345678901`
 
 ### 3. **Cadastrar Usuário**
-- **POST**: `/user`
+- **POST**: `http://34.235.170.120:8080/user`
   - **Descrição**: Adiciona um novo usuário ao sistema.
   - **Corpo da requisição** (JSON):
     ```json
@@ -28,5 +30,3 @@ Esta API foi criada para a disciplina **Banco de Dados I** e permite o cadastro 
       "data_nascimento": "2010-02-25"
     }
     ```
-  - **Exemplo de uso**:
-    - `POST /user` com o JSON acima adicionará um novo usuário.
